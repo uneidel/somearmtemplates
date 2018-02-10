@@ -1,0 +1,61 @@
+﻿{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "StorageAccountPrefix": {
+      "value": "xx321"
+    },
+    "dnsNameforLBIP": {
+      "value": "faeaf"
+    },
+    "modulesUrl": {
+      "value": "https://uneidelpwcstorage.blob.core.windows.net/sampledsc/Helix.zip"
+    },
+    "PackageFeedUserName": {
+      "value": "ulrich.neidel"
+    },
+    "PackageFeedPassword": {
+      "value": "wjuget57zxlwz6am46vnudqtrvzqox4gbixmtny5ue3c5hhmb6fa"
+    },
+    "configurationFunction": {
+      "value": "Helix.ps1\\Helix"
+    },
+    "KeyVaultName": {
+      "value": "pwcKeyVault"
+    },
+    "KeyVaultResourceGroup": {
+      "value": "autorg"
+    },
+    "KeyVaultkeyEncryptionKeyURL": {
+      "value": ""
+    },
+    "KeyVaultaadClientID": {
+      "value": "42f18763-1a83-453b-9bf9-227818454cf3"
+    },
+    "KeyVaultaadClientSecret": {
+      "value": "OLuEkoqPtXt5TZWIkGHB8OI0dJHgLMrODJiBx18og+Q="
+    },
+    "ClientAccountList": {
+      "value": [
+        {
+          "vmname": "vmclient01",
+          "username": "uneidel",
+          "Password": "Passw0rd!",
+          "vmsize": "Standard_D3"
+        },
+        {
+          "vmname": "vmclient02",
+          "username": "uneidel",
+          "Password": "Passw0rd!",
+          "vmsize": "Standard_D3"
+        },
+        {
+          "vmname": "vmclient03",
+          "username": "uneidel",
+          "Password": "Passw0rd!",
+          "vmsize": "Standard_D3"
+        }
+      ]
+    }
+  }
+}

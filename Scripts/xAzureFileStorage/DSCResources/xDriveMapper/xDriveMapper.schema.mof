@@ -1,0 +1,12 @@
+[ClassVersion("1.0.0"), FriendlyName("xDriveMapper")] 
+
+class xDriveMapper: OMI_BaseResource
+{
+	
+	[Key] string shareName;
+	
+	[Write] string storageName;
+	[Write] string storageKey;
+	[Write] string DriveLetter; 
+
+ };

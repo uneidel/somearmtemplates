@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>63737638-f366-4550-8fcf-d152c1def9f3</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworkIdentifier>Deployment</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>1.0</TargetFrameworkVersion>
+    <PrepareForBuildDependsOn>
+    </PrepareForBuildDependsOn>
+  </PropertyGroup>
+  <Import Condition=" Exists('Deployment.targets') " Project="Deployment.targets" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- vertag<:>start tokens<:>maj.min -->
+  <Import Condition=" Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Deployment\1.1\DeploymentProject.targets') " Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Deployment\1.1\DeploymentProject.targets" />
+  <!-- vertag<:>end -->
+  <ItemGroup>
+    <Folder Include="packages\HelixDesktop\.git\objects\info\" />
+    <Folder Include="packages\HelixDesktop\.git\objects\pack\" />
+    <Folder Include="packages\HelixDesktop\.git\refs\tags\" />
+    <Folder Include="Templates\" />
+    <Folder Include="Tools\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Deployment.targets">
+      <Visible>False</Visible>
+    </None>
+    <Content Include="Scripts\Deploy-AzureResourceGroup.ps1" />
+    <Content Include="Templates\azuredeploy.json" />
+    <Content Include="Templates\azuredeploy.parameters.json" />
+    <None Include="packages\cTableau\ctableau.nuspec" />
+    <None Include="packages\cTableau\tools\chocolateyinstall.ps1" />
+    <None Include="packages\cTableau\tools\chocolateyuninstall.ps1" />
+    <None Include="packages\cTableau\tools\ReadMe.md" />
+    <None Include="packages\HelixDesktop\.git\COMMIT_EDITMSG" />
+    <None Include="packages\HelixDesktop\.git\config" />
+    <None Include="packages\HelixDesktop\.git\description" />
+    <None Include="packages\HelixDesktop\.git\HEAD" />
+    <None Include="packages\HelixDesktop\.git\hooks\applypatch-msg.sample" />
+    <None Include="packages\HelixDesktop\.git\hooks\commit-msg.sample" />
+    <None Include="packages\HelixDesktop\.git\hooks\post-update.sample" />
+    <None Include="packages\HelixDesktop\.git\hooks\pre-applypatch.sample" />
+    <None Include="packages\HelixDesktop\.git\hooks\pre-commit.sample" />
+    <None Include="packages\HelixDesktop\.git\hooks\pre-push.sample" />
+    <None Include="packages\HelixDesktop\.git\hooks\pre-rebase.sample" />
+    <None Include="packages\HelixDesktop\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="packages\HelixDesktop\.git\hooks\update.sample" />
+    <None Include="packages\HelixDesktop\.git\index" />
+    <None Include="packages\HelixDesktop\.git\info\exclude" />
+    <None Include="packages\HelixDesktop\.git\logs\HEAD" />
+    <None Include="packages\HelixDesktop\.git\logs\refs\heads\master" />
+    <None Include="packages\HelixDesktop\.git\logs\refs\remotes\origin\master" />
+    <None Include="packages\HelixDesktop\.git\objects\02\fb8e4e80abb671e8d660bb71570394a6f09e1e" />
+    <None Include="packages\HelixDesktop\.git\objects\22\059eafd766ae5da76f89181022105f44e29e72" />
+    <None Include="packages\HelixDesktop\.git\objects\2d\4d621352115ad2011c7ca44680695b1ac918e0" />
+    <None Include="packages\HelixDesktop\.git\objects\34\a7f3274c3119c55389fbb328aa488fdb6c99a9" />
+    <None Include="packages\HelixDesktop\.git\objects\4e\40dba1b338c0fb6951db92bd4744c134c383dd" />
+    <None Include="packages\HelixDesktop\.git\objects\5a\17cd17bf731e006b233c430b44fab7f8264260" />
+    <None Include="packages\HelixDesktop\.git\objects\74\58e8ca0bceb35d7491fbb112fc7d4c7580d7de" />
+    <None Include="packages\HelixDesktop\.git\objects\96\3241159318f6c4f18c2eac7d469c3fc03b9714" />
+    <None Include="packages\HelixDesktop\.git\objects\97\21e333bb29706e294e7c5a6c1266d98225e3be" />
+    <None Include="packages\HelixDesktop\.git\objects\dc\5f61d669f0fd630f5da773799dfe61ff31873f" />
+    <None Include="packages\HelixDesktop\.git\objects\f8\5833c3246e5ebe72b7e6fe0b7b0097cc77e3ab" />
+    <None Include="packages\HelixDesktop\.git\refs\heads\master" />
+    <None Include="packages\HelixDesktop\.git\refs\remotes\origin\master" />
+    <None Include="packages\HelixDesktop\HelixDesktop.nuspec" />
+    <None Include="packages\HelixDesktop\tools\chocolateyinstall.ps1" />
+    <None Include="packages\HelixDesktop\tools\chocolateyuninstall.ps1" />
+    <None Include="packages\HelixDesktop\tools\content\hAD_Wallpaper.jpg" />
+    <None Include="packages\HelixDesktop\tools\Security.psm1" />
+    <None Include="packages\HelixDesktop\tools\WallPaper.psm1" />
+    <None Include="Scripts\HelixDSC.ps1" />
+    <None Include="Scripts\pwcChoco\2.0.5.22\appveyor.yml" />
+    <None Include="Scripts\pwcChoco\2.0.5.22\AppveyorCIScript.ps1" />
+    <None Include="Scripts\pwcChoco\2.0.5.22\DSCResources\cChocoInstaller\cChocoInstaller.psm1" />
+    <None Include="Scripts\pwcChoco\2.0.5.22\DSCResources\cChocoInstaller\cChocoInstaller.schema.mof" />
+    <None Include="Scripts\pwcChoco\2.0.5.22\DSCResources\cChocoPackageInstall\cChocoPackageInstall.psm1" />
+    <None Include="Scripts\pwcChoco\2.0.5.22\DSCResources\cChocoPackageInstall\cChocoPackageInstall.schema.mof" />
+    <None Include="Scripts\pwcChoco\2.0.5.22\ExampleConfig.ps1" />
+    <None Include="Scripts\pwcChoco\2.0.5.22\pwcChoco.psd1" />
+    <None Include="Scripts\pwcChoco\2.0.5.22\readme.md" />
+    <None Include="Scripts\xAzureFileStorage\DSCResources\xAzureStorageInstaller\xAzureStorageInstaller.psm1" />
+    <None Include="Scripts\xAzureFileStorage\DSCResources\xAzureStorageInstaller\xAzureStorageInstaller.schema.mof" />
+    <None Include="Scripts\xAzureFileStorage\DSCResources\xDriveMapper\xDriveMapper.psm1" />
+    <None Include="Scripts\xAzureFileStorage\DSCResources\xDriveMapper\xDriveMapper.schema.mof" />
+    <None Include="Scripts\xAzureFileStorage\xAzureFileStorage.psd1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Tools\AzCopy.exe" />
+    <Content Include="Tools\Microsoft.Data.Edm.dll">
+      <Visible>False</Visible>
+    </Content>
+    <Content Include="Tools\Microsoft.Data.OData.dll">
+      <Visible>False</Visible>
+    </Content>
+    <Content Include="Tools\Microsoft.Data.Services.Client.dll">
+      <Visible>False</Visible>
+    </Content>
+    <Content Include="Tools\Microsoft.WindowsAzure.Storage.dll">
+      <Visible>False</Visible>
+    </Content>
+    <Content Include="Tools\Microsoft.WindowsAzure.Storage.DataMovement.dll">
+      <Visible>False</Visible>
+    </Content>
+  </ItemGroup>
+  <Target Name="GetReferenceAssemblyPaths" />
+</Project>
